@@ -68,3 +68,8 @@ body {
 .project-grid .project-item:hover .project-title span {
     filter: grayscale(0%);
 }
+
+.lead,
+.design-philosophy p {
+    text-align: justify;
+}

@@ -9,27 +9,29 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-s2/1v96Q1rg3UIKj3qFAhN1w4L4GV7D3R/ODh3EuZg85D021DIL5o93r3s9D2v2Hj2Tj53yL41G1/1P2a1/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.svg" alt="Emma's Design Co. Logo" width="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-collapse collapse w-100 order-1 order-lg-0 dual-collapse2" id="navbarNavLeft">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#projects">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="../index.html" style="font-size: 2.2rem; font-weight: bold; text-decoration: none; color: black;">Emma Jackson</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavRight">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../about.html#contact-info">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -53,11 +55,11 @@
                     <!-- Project Card 1 -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="projects/images/project-1.1.jpg" class="card-img-top" alt="Project 1">
+                            <img src="images/project-1.1.jpg" class="card-img-top" alt="Project 1">
                             <div class="card-body">
                                 <h5 class="card-title">Title</h5>
                                 <p class="card-text">A brief description</p>
-                                <a href="projects/project-1.html" class="btn btn-primary">button</a>
+                                <a href="project-1.html" class="btn btn-primary">button</a>
                             </div>
                         </div>
                     </div>
@@ -68,14 +70,18 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-center py-4 bg-light">
+    <footer class="py-4 bg-light">
         <div class="container">
-            <div class="mb-3">
-                <a href="mailto:email@example.com" class="text-dark me-3"><i class="bi bi-envelope-fill"></i></a>
-                <a href="tel:+1234567890" class="text-dark me-3"><i class="bi bi-telephone-fill"></i></a>
-                <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="mb-0">&copy; 2025 Emma Jackson Design</p>
+                </div>
+                <div>
+                    <a href="mailto:email@example.com" class="text-dark me-3"><i class="bi bi-envelope-fill fs-5"></i></a>
+                    <a href="tel:+1234567890" class="text-dark me-3"><i class="bi bi-telephone-fill fs-5"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-linkedin fs-5"></i></a>
+                </div>
             </div>
-            <p>&copy;2025 Emma Jackson Design</p>
         </div>
     </footer>
 
