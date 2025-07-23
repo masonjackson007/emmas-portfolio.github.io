@@ -11,78 +11,162 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.svg" alt="Emma's Design Co. Logo" width="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container position-relative">
+            <div class="navbar-brand position-absolute top-50 start-50 translate-middle" style="font-size: 2.2rem; font-weight: bold; text-decoration: none; color: black; z-index: 2;">
+                <a href="index.html" style="color: inherit; text-decoration: none;">EMMA GRACE JACKSON</a>
+            </div>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html#contact-info">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html#contact-info">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Heading Image -->
+    <section class="heading-image">
+        <img src="assets/images/Heading_image.jpg" class="img-fluid" alt="Responsive image">
+    </section>
+
     <!-- Main Content Introduction -->
     <main>
-        <section class="hero text-center py-5">
-            <div class="container">
-                <h1 class="display-4">Emma Jackson</h1>
-                <p class="lead">A passionate interior designer creating beautiful and functional spaces.</p>
-            </div>
-        </section>
-
         <!-- Project Collage -->
         <section id="projects" class="project-grid py-5">
-            <div class="container">
+            <div class="container-fluid px-lg-5"> <!-- You can change this to "container" for a more centered, narrower look, or "container-xl" for a wider but not full-width layout -->
+                <!-- First Row -->
                 <div class="row">
-                    <div class="col-lg-7 mb-4">
+                    <div class="col-lg-2 mb-4">
                         <a href="projects/project-1.html" class="project-item">
-                            <img src="assets/images/headshot.jpg" class="img-fluid" alt="Modern Living Room">
+                            <img src="assets/images/chair-project/historic-chair.jpg" class="img-fluid" alt="Sketchup Project">
                             <div class="project-title">
-                                <h5>Example 1</h5>
-                                <span class="project-label">Label 1</span>
+                                <h5>Historic Chair</h5>
+                                <span class="project-label">AutoCAD</span>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-5 mb-4">
+                    <div class="col-lg-2 mb-4">
                         <a href="projects/project-2.html" class="project-item">
-                            <img src="https://placehold.co/600x600/EFEFEF/333" class="img-fluid" alt="Minimalist Kitchen">
+                            <img src="assets/images/codes/codes_heading.jpg" class="img-fluid" alt="Chair Project">
                              <div class="project-title">
-                                <h5>Example 2</h5>
-                                <span class="project-label">Label 2</span>
+                                <h5>Codes</h5>
+                                <span class="project-label">AutoCAD</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-7 mb-4">
+                        <a href="projects/project-3.html" class="project-item">
+                            <img src="assets/images/lighting-projects/lighting-heading.jpg" class="img-fluid" alt="Codes Project">
+                             <div class="project-title">
+                                <h5>Lighting Project</h5>
+                                <span class="project-label">AutoCAD</span>
+                            </div>
+                        </a>
+                    </div>
+                     <div class="col-lg-3 mb-4">
+                        <a href="projects/project-4.html" class="project-item">
+                            <img src="assets/images/moonlight/moonlight-heading.jpg" class="img-fluid" alt="AutoCAD Project">
+                             <div class="project-title">
+                                <h5>Moonlight</h5>
+                                <span class="project-label">Sketchup</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <a href="projects/project-4.html" class="project-item">
+                            <img src="assets/images/materials/heading.png" class="img-fluid" alt="AutoCAD Project">
+                             <div class="project-title">
+                                <h5>Materials</h5>
+                                <span class="project-label">AutoCAD</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Second Row -->
+                <div class="row">
+                    <div class="col-lg-5 mb-4">
+                        <a href="projects/project-5.html" class="project-item">
+                            <img src="assets/images/chairs/peacock-chair2.jpg" class="img-fluid" alt="Project 5">
+                            <div class="project-title">
+                                <h5>Chairs</h5>
+                                <span class="project-label">Artwork</span>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-5 mb-4">
-                        <a href="projects/project-3.html" class="project-item">
-                            <img src="https://placehold.co/600x600/EFEFEF/333" class="img-fluid" alt="Boutique Cafe">
-                             <div class="project-title">
-                                <h5>Example 3</h5>
-                                <span class="project-label">Label 3</span>
+                        <a href="projects/project-5.html" class="project-item">
+                            <img src="assets/images/chairs/peacock-chair.jpg" class="img-fluid" alt="Project 5">
+                            <div class="project-title">
+                                <h5>Chairs</h5>
+                                <span class="project-label">Artwork</span>
                             </div>
                         </a>
                     </div>
-                     <div class="col-lg-7 mb-4">
-                        <a href="projects/project-4.html" class="project-item">
-                            <img src="https://placehold.co/800x600/EFEFEF/333" class="img-fluid" alt="Cozy Bedroom Concept">
-                             <div class="project-title">
-                                <h5>Example 4</h5>
-                                <span class="project-label">Label 4</span>
+                    <div class="col-lg-5 mb-4">
+                        <a href="projects/project-6.html" class="project-item">
+                            <img src="assets/images/interiors/villa-staircase.jpg" class="img-fluid" alt="Project 6">
+                            <div class="project-title">
+                                <h5>Interiors</h5>
+                                <span class="project-label">Artwork</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-4">
+                        <a href="projects/project-6.html" class="project-item">
+                            <img src="assets/images/interiors/villa-staircase2.jpg" class="img-fluid" alt="Project 6">
+                            <div class="project-title">
+                                <h5>Interiors</h5>
+                                <span class="project-label">Artwork</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-4">
+                        <a href="projects/project-7.html" class="project-item">
+                            <img src="assets/images/altoid-boxes/too-hotel.jpg" class="img-fluid" alt="Project 7">
+                            <div class="project-title">
+                                <h5>Altoid Boxes</h5>
+                                <span class="project-label">Artwork</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-4">
+                        <a href="projects/project-7.html" class="project-item">
+                            <img src="assets/images/altoid-boxes/too-hotel2.jpg" class="img-fluid" alt="Project 7">
+                            <div class="project-title">
+                                <h5>Altoid Boxes</h5>
+                                <span class="project-label">Artwork</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-4">
+                        <a href="projects/project-7.html" class="project-item">
+                            <img src="assets/images/objects/luzy-on-the-wall.jpg" class="img-fluid" alt="Project 7">
+                            <div class="project-title">
+                                <h5>Objects</h5>
+                                <span class="project-label">Artwork</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-4">
+                        <a href="projects/project-7.html" class="project-item">
+                            <img src="assets/images/objects/luzy-on-the-wall2.jpg" class="img-fluid" alt="Project 7">
+                            <div class="project-title">
+                                <h5>Objects</h5>
+                                <span class="project-label">Artwork</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <a href="projects/project-7.html" class="project-item">
+                            <img src="assets/images/exteriors/museum.jpg" class="img-fluid" alt="Project 7">
+                            <div class="project-title">
+                                <h5>Exteriors</h5>
+                                <span class="project-label">Artwork</span>
                             </div>
                         </a>
                     </div>
