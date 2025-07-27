@@ -78,3 +78,32 @@ body {
 .design-philosophy p {
     text-align: justify;
 }
+
+.pdf-viewer {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.pdf-viewer .pdf-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+
+.image-gallery .col-md-4 {
+    overflow: hidden;
+}
+
+.image-gallery img {
+    border-radius: 0.25rem;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
