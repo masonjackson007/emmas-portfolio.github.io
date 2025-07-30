@@ -109,3 +109,16 @@ body {
 .image-gallery img:hover {
     transform: scale(1.05);
 }
+
+.project-image-wrapper {
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.project-image-scaled {
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: none;
+}
