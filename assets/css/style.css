@@ -122,3 +122,17 @@ body {
     transform: translateX(-50%);
     max-width: none;
 }
+
+.section-heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+hr {
+    width: 100px;
+    border: 1px solid #ff6600;
+    opacity: 1;
+}
