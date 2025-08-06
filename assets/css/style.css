@@ -25,6 +25,10 @@ body {
     transform: scale(1.05); /*zoom effect*/
 }
 
+.project-grid .project-item.no-zoom:hover img {
+    transform: none;
+}
+
 /* Style for the text overlay */
 .project-grid .project-item .project-title {
     position: absolute; 
@@ -108,6 +112,10 @@ body {
 
 .image-gallery img:hover {
     transform: scale(1.05);
+}
+
+.image-gallery.no-zoom img:hover {
+    transform: none;
 }
 
 .project-image-wrapper {
