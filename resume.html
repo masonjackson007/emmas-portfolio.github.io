@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lighting Project - Emma's Interior Design</title>
+    <title>Resume - Emma's Interior Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -13,17 +13,17 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container position-relative">
             <div class="navbar-brand position-absolute top-50 start-50 translate-middle" style="font-size: 2.2rem; font-weight: bold; text-decoration: none; color: black; z-index: 2;">
-                <a href="../index.html" style="color: inherit; text-decoration: none;">EMMA GRACE JACKSON</a>
+                <a href="index.html" style="color: inherit; text-decoration: none;">EMMA GRACE JACKSON</a>
             </div>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../about.html#contact-info">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html#contact-info">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -31,16 +31,29 @@
 
     <!-- Main Content -->
     <main class="container py-5">
-        <div class="text-center mb-5">
-            <h1>Lighting Project</h1>
-            <p class="lead">Lighting Design for a farmhouse art gallery</p>
+        <div class="text-center mb-4">
+            <h1>Resume</h1>
         </div>
 
-
-
-        <div class="pdf-viewer">
-            <h2 class="pdf-title">Lighting</h2>
-            <iframe src="../assets/images/lighting/lighting.pdf#view=fitH" width="100%" height="800px"></iframe>
+        <!-- Embedded PDF Viewer -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="embed-responsive" style="position: relative; width: 100%; height: 800px; border: 1px solid #dee2e6; border-radius: 0.25rem; overflow: hidden; box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);">
+                    <iframe 
+                        src="assets/images/Resume.pdf#view=fitH&toolbar=1&navpanes=0" 
+                        width="100%" 
+                        height="100%" 
+                        style="border: none;">
+                        <p>Your browser does not support PDFs. Please <a href="assets/images/Resume.pdf">download the PDF</a> to view it.</p>
+                    </iframe>
+                </div>
+                <div class="text-center mt-3">
+                    <small class="text-muted">
+                        Having trouble viewing? <a href="assets/images/Resume.pdf" target="_blank">Open in new tab</a> or 
+                        <a href="assets/images/Resume.pdf" download="Emma_Jackson_Resume.pdf">download the PDF</a>
+                    </small>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -49,8 +62,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4">
-                    <a href="../index.html">
-                        <img src="../assets/images/logo.svg" alt="Emma's Design Co. Logo" width="150">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="Emma's Design Co. Logo" width="150">
                     </a>
                 </div>
                 <div class="col-md-8">
