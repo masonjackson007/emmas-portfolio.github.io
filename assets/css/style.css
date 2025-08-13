@@ -158,6 +158,87 @@ body {
     padding: 1rem 0;
 }
 
+/* Navigation Link Styling */
+.navbar-nav .nav-link {
+    position: relative;
+    color: #333 !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Orange hover effect for navigation links */
+.navbar-nav .nav-link:hover {
+    color: #ff6600 !important;
+}
+
+/* Active page indicator - small orange underline */
+.navbar-nav .nav-link.active {
+    color: #333 !important;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #ff6600;
+    border-radius: 1px;
+}
+
+/* Hover effect maintains the underline for active links */
+.navbar-nav .nav-link.active:hover {
+    color: #ff6600 !important;
+}
+
+/* Smooth animated underline effect on hover for non-active links */
+.navbar-nav .nav-link:not(.active)::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #ff6600;
+    border-radius: 1px;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:not(.active):hover::before {
+    width: 30px;
+}
+
+/* Brand name styling improvements */
+.navbar-brand {
+    transition: color 0.3s ease !important;
+}
+
+.navbar-brand:hover {
+    color: #ff6600 !important;
+}
+
+/* Improved navbar toggle button */
+.navbar-toggler {
+    border: 1px solid #ff6600;
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.25);
+    border-color: #ff6600;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ff6600' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .lead,
 .design-philosophy p {
     text-align: justify;
@@ -333,6 +414,43 @@ footer .footer-logo {
 
 footer .footer-logo:hover {
     transform: scale(1.05);
+}
+
+/* Mobile Navigation Improvements */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(248, 249, 250, 0.98);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        margin-top: 1rem;
+        padding: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem !important;
+        margin: 0.25rem 0;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 102, 0, 0.1);
+        transform: translateX(5px);
+    }
+    
+    .navbar-nav .nav-link.active::after {
+        display: none;
+    }
+    
+    .navbar-nav .nav-link.active {
+        background-color: rgba(255, 102, 0, 0.15);
+        color: #ff6600 !important;
+    }
+    
+    .navbar-nav .nav-link:not(.active)::before {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
