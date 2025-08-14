@@ -25,7 +25,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.85) 100%);
+    background: radial-gradient(circle at center, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.55) 100%);
     z-index: 1;
 }
 
@@ -97,7 +97,7 @@ body {
 
 /* Employment Banner Styles */
 .employment-banner {
-    background: linear-gradient(135deg, #ff6600 0%, #ff8533 100%);
+    background: linear-gradient(135deg, #e55a00 0%, #cc4d00 100%);
     color: white;
 }
 
